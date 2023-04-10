@@ -1,0 +1,41 @@
+.mo-button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 1 */
+.mo-button--1 {
+  background: rgb(6, 14, 131);
+  background: linear-gradient(0deg, rgb(6, 14, 131) 0%, rgb(12, 25, 180) 100%);
+  border: none;
+}
+.mo-button--1:hover {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(0deg, rgb(0, 3, 255) 0%, rgb(2, 126, 251) 100%);
+}
+
+/* 2 */
+.mo-button--2 {
+  background: rgb(96, 9, 240);
+  background: linear-gradient(0deg, rgb(96, 9, 240) 0%, rgb(129, 5, 240) 100%);
+  border: none;
+}
+.mo-button--2:before {
+  height: 0%;
+  width: 2px;
+}
+.mo-button--2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
