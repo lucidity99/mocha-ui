@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.30.0"
+  }
 }

@@ -1,17 +1,21 @@
-import { defineComponent as o, computed as r, openBlock as u, createElementBlock as c, normalizeClass as p, unref as s } from "vue";
-import "./styles/index.scss";
-const m = o({ name: "mo-button" }), f = /* @__PURE__ */ o({
-  ...m,
+import { defineComponent as e, computed as s, openBlock as u, createElementBlock as c, normalizeClass as l, unref as a, renderSlot as m, createTextVNode as p } from "vue";
+import "./style/index.css";
+const _ = /* @__PURE__ */ p("mocha-ui"), d = e({ name: "mo-button" }), y = /* @__PURE__ */ e({
+  ...d,
   props: {
     type: null
   },
-  setup(e) {
-    const t = e, n = r(() => ({ [`mo-button--${t.type}`]: t.type }));
-    return (l, a) => (u(), c("button", {
-      class: p(["mo-button", s(n)])
-    }, "测试按钮", 2));
+  setup(o) {
+    const t = o, n = s(() => ({ [`mo-button--${t.type}`]: t.type }));
+    return (r, f) => (u(), c("button", {
+      class: l(["mo-button", a(n)])
+    }, [
+      m(r.$slots, "default", {}, () => [
+        _
+      ])
+    ], 2));
   }
 });
 export {
-  f as default
+  y as default
 };
